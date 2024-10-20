@@ -1,8 +1,18 @@
 import React from 'react'
+import Header from '../components/Header'
+
+import TopDoctors from '../components/TopDoctors'
+import Banner from '../components/Banner'
+import SpecialtyMenu from '../components/SpecialityMenu'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Header />
+      <SpecialtyMenu />
+      <TopDoctors />
+      <Banner />
+    </div>
   )
 }
 
