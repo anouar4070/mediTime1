@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: Outfit;
 }
-.active hr{
-  @apply block
+.active hr {
+  @apply block;
 }
 
-::-webkit-scrollbar{
-  @apply hidden
+::-webkit-scrollbar {
+  @apply hidden;
 }
+
+/*  
+ ** The .active class is automatically added to the <NavLink> when the route it points to is currently active. When this happens, the associated <hr> becomes visible because of the @apply block rule. 
+** The rule ::-webkit-scrollbar { @apply hidden; } hides the scrollbar in WebKit browsers by applying the hidden utility, enhancing the visual appearance of the UI by removing the default scrollbar. */
