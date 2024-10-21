@@ -4,6 +4,7 @@ import { AppContext } from "../context/AppContext";
 
 const Doctors = () => {
   const { speciality } = useParams();
+  console.log("Speciality from URL:", speciality);
   const [filterDoc, setFilterDoc] = useState([]);
   const [showFilter, setShowFilter] = useState([]);
 
@@ -11,6 +12,7 @@ const Doctors = () => {
   const { doctors } = useContext(AppContext);
 
   const applyFilter = () => {
+    console.log("Applying filter for:", speciality);
     if (speciality) {
       setFilterDoc(doctors.filter((doc) => doc.speciality === speciality));
     } else {
